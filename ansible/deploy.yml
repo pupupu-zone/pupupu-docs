@@ -19,9 +19,9 @@
         password: "{{ docker_password }}"
         reauthorize: true
 
-    - name: Deploy documentation (PUPUPU-DOC)
+    - name: Deploy documentation (UHA-DOC)
       community.docker.docker_container:
-        name: PUPUPU-DOC
+        name: UHA-DOC
         image: registry.keireira.com/subsawwy-landing:latest
         state: started
         restart_policy: always
